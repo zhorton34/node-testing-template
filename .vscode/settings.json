@@ -1,0 +1,17 @@
+{
+  "npm.packageManager": "npm",
+  "npm.autoDetect": "on",
+  "npm.enableRunFromFolder": true,
+  "npm.runSilent": true,
+
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true  
+}

@@ -1,14 +1,41 @@
 {
-  "name": "my-node-project",
+  "name": "node-js-template",
+  "description": "A comprehensive Node.js project template",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "node --test",
-    "coverage": "node --test --coverage"
+  "main": "main.js",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9.0",
+    "npm": ">=10.8.3"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "type": "module"
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node --watch main.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "node --experimental-specifier-resolution=node --experimental-test-coverage --experimental-test-snapshots --test",
+    "test:watch": "node --experimental-specifier-resolution=node --experimental-test-coverage --experimental-test-snapshots --test --watch",
+    "test:coverage": "node --experimental-specifier-resolution=node --experimental-test-coverage --experimental-test-snapshots --test",
+    "test:all": "node --experimental-specifier-resolution=node --experimental-test-coverage --experimental-test-snapshots --test",
+    "test:all:update": "node --experimental-specifier-resolution=node --experimental-test-coverage --experimental-test-snapshots --test-update-snapshots --test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "tsconfig": {
+    "exclude": ["node_modules", "**/node_modules/*"],
+    "allowJs": true,
+    "checkJs": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "ES6",
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./*"]
+      }
+    }
+  }
 }
