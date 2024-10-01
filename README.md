@@ -1,3 +1,5 @@
+![Node.js CI](https://github.com/zhorton34/node-js-template/actions/workflows/node-ci.yml/badge.svg)
+
 # Node.js Testing Template
 
 This project demonstrates comprehensive testing practices for Node.js
